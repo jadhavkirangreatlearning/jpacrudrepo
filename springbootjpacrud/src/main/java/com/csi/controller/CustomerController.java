@@ -65,4 +65,10 @@ public class CustomerController {
         customerServiceImpl.deleteDataById(custId);
         return ResponseEntity.ok("Data Deleted Successfully");
     }
+
+    @GetMapping("/hello")
+    public ResponseEntity<String> sayHello(){
+
+        return ResponseEntity.ok("Welcome to Fintech csi");
+    }
 }
